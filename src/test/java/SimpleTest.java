@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class SimpleTest {
 
@@ -17,6 +18,7 @@ public class SimpleTest {
             int a = 2;
             int b = 3;
 
-            assertEquals(a * b, 7, "a * b should be 6, not 7");
+            assertNotEquals(a * b, 7, "a * b should be 6, not 7");
+
         }
     }
